@@ -1,0 +1,157 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.heading{
+    text-align: center;
+    font-size: 36px;
+}
+input[type=text]:focus{
+    box-shadow: none;
+}
+.top{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+.main{
+    padding: 40px 28px 40px 28px;
+    background: #101039;
+    position: relative;
+    width: 28%;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: rgb(16 16 57 / 30%) 0px 19px 38px, rgb(16 16 57 / 22%) 0px 15px 12px;
+    display: none;
+}
+.date{
+    font-size: 20px;
+    font-weight: 700;
+}
+.date p{
+    margin: 0;
+    font-size: 11px;
+    font-weight: 500;
+}
+.temp-aria{
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #fff;
+}
+.curr-temp{
+    font-size: 68px;
+    font-weight: 600;
+}
+.temp{
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+    position: relative;
+}
+.degree{
+    position: absolute;
+    font-size: 18px;
+    top: 23px;
+}
+.area{
+    margin: 0;
+    position: absolute;
+    bottom: 0px;
+    padding-left: 8px;
+    padding-right: 12px;
+    font-size: 12px;
+}
+.realtime{
+    text-align: center;
+    margin: 64px 0 20px 0;
+    font-size: 14px;
+    color: #fff;
+}
+.realtime span{
+    font-weight: 600;
+}
+.circle-icon{
+    font-size: 10px;
+}
+.more-details{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.w-value{
+    font-weight: 600;
+}
+.w-condition{
+    color: #fff;
+}
+.cloud-icon-1{
+    font-size: 78px;
+    position: absolute;
+    top: 62px;
+    left: 0;
+    color: #1d1d46;
+}
+.cloud-icon-2{
+    font-size: 60px;
+    position: absolute;
+    top: 154px;
+    right: 0px;
+    color: #1d1d46;
+}
+.cloud-icon-3{
+    position: absolute;
+    color: #1d1d46;
+    top: 17%;
+    right: 30px;
+    font-size: 40px;
+}
+.border-right{
+    border-right: 1px solid #000;
+}
+.border-right-color{
+    border-color: #fff;
+}
+.body-dark{
+    background: #000;
+}
+.color-white{
+    color: #fff;
+}
+.box-shadow{
+    box-shadow: rgb(255 255 255 / 25%) 0px 14px 28px, rgb(255 255 255 / 22%) 0px 10px 10px;
+}
+button[type="button"]:focus{
+    box-shadow: none;
+}
+input[type="checkbox"]:focus{
+    box-shadow: none;
+}
+.btn-toggle{
+    position: relative;
+}
+.btn-toggle > input[type="checkbox"]{
+    width: 64px;
+    height: 25px;
+}
+.moon{
+    position: absolute;
+    left: 38px;
+    top: 4px;
+    color: #101039;
+}
+.hide{
+    display: none;
+}
+.sun{
+    display: none;
+    position: absolute;
+    left: 6px;
+    top: 4px;
+    color: #fff300;
+}

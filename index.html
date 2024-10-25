@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/all.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/all.js" type="text/javascript"></script>
+        <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
+        <script src="js/js.js" type="text/javascript"></script>
+    </head>
+    <body id="body-dark">
+        <div class="container">
+            <div class="form-check form-switch btn-toggle">
+                <input class="form-check-input" type="checkbox" id="darkMode" onclick="darkMode(this.id)">
+                <div class="moon" id="moon">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <div class="sun" id="sun">
+                    <i class="fas fa-sun"></i>
+                </div>
+            </div>
+            <h1 class="heading" id="heading">Weather Web Application by Rudra</h1>
+            <div class="row">
+                <div class="col-lg-6 border-right" id="border-right">
+                    <h6 id="sub-head">Get weather details by city</h6>
+                    <input type="text" list="city-data" id="city-name" class="form-control" onchange="getWeatherDetails(this.id)"/>
+                    <datalist id="city-data">
+                        
+                    </datalist>
+                </div>
+                <div class="col-lg-6">
+                    <h6 id="sub-head-2">Get weather details by lat. and long.</h6>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <input type="text" class="form-control" placeholder="Enter latitude" id="lat" />
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="text" class="form-control" placeholder="Enter longitude" id="long" />
+                        </div>
+                        <div class="col-lg-4">
+                            <button type="button" class="btn btn-primary" onclick="getWeatherDetails(this.id)" id="get-detail">
+                                Get Detail
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <section class="weather-detail">
+            <div class="container">
+                <div class="mainContainer">
+                    <div class="row">
+                        <div class="col-lg-12 d-flex justify-content-center">
+                            <div class="main" id="main">
+                                <div class="">
+                                    <div class="top">
+                                        <div class="weather-icon">
+                                            <img id="wicon" src="" class="img-fluid" width="58" />
+                                        </div>
+                                        <div class="date">
+                                            Today
+                                            <p id="date"></p>
+                                        </div>
+                                    </div>
+                                    <div class="temp-aria">
+                                        <p class="temp">
+                                            <span id="curr-temp" class="curr-temp"></span>
+                                            <span class="degree">&#176;C</span>
+                                        </p>
+                                        <p class="area">
+                                            <span id="city"></span>
+                                            <span id="country"></span>
+                                        </p>
+                                    </div>
+                                    <div class="realtime">
+                                        Feels like <span id="feels-like"></span>&#176;C 
+                                        <span class="circle-icon"><i class="fas fa-circle"></i></span>
+                                        Sunset <span id="sunset"></span>
+                                    </div>
+                                    <div class="more-details">
+                                        <div>
+                                            <span class="wind-icon"><i class="fas fa-wind"></i></span>
+                                            <span id="speed-value"></span>
+                                        </div>
+                                        <div>
+                                            <span class="humidity-icon"><i class="fas fa-cloud-rain"></i></span>
+                                            <span id="humidity"></span>
+                                        </div>
+                                        <div>
+                                            <span class="pressure-icon"><i class="fas fa-sort-amount-down"></i></span>
+                                            <span id="pressure-value"></span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="w-condition">
+                                        <span>Weather condtion: </span>
+                                        <span id="w-condition" class="w-value"></span>
+                                    </div>
+                                </div>
+                                <div class="cloud-icon-1"><i class="fas fa-cloud"></i></div>
+                                <div class="cloud-icon-2"><i class="fas fa-cloud"></i></div>
+                                <div class="cloud-icon-3"><i class="fas fa-cloud"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+    <script>
+        window.onload = loadData();
+    </script>
+</html>
